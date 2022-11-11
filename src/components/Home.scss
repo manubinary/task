@@ -1,0 +1,22 @@
+
+.main {
+  width: 100%;
+  .headerContainer {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    h2 {
+      color: chocolate ;
+      font-weight: 700;
+    }
+  }
+  .searchContainer {
+    padding-top: 5%;
+    padding-bottom: 2%;
+     input {
+       border-radius: 6px;
+     }
+     a {
+       padding-right: 8px;
+     }
+  }
+}
