@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Home() {
-  const [songsList, setSongsList] = useState({});
+  const [songsList, setSongsList] = useState('');
   const [labelFilter, setLabelFilter] = useState('');
   useEffect(()=> {
      fetch('https://itunes.apple.com/us/rss/topalbums/limit=50/json')
@@ -40,7 +40,7 @@ function Home() {
         </Row>
         <Row>
           <Col>
-            <SongsList songsList={songsList} labelFilter={labelFilter}/>
+            {songsList && <SongsList songsList={songsList} labelFilter={labelFilter}/>}
           </Col>
         </Row>
       </div>
