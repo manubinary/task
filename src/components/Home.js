@@ -25,7 +25,7 @@ function Home() {
       <div className="main">
         <Row>
           <Col xs={12} md={6} lg={6} className="headerContainer">
-            <h2> Legalesign Music</h2>
+            <h2> ABC Music</h2>
           </Col>
           <Col xs={12} md={6} lg={6} className="searchContainer">
           <a>Search here</a>
